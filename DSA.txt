@@ -1,0 +1,159 @@
+ASCII Values of letters
+A-Z -> 65 to 90
+a-z -> 97 to 122
+
+const auto var_name =(data_type) value; -> to store constant value in a variable
+int -> -2^31 to 2^31 -1 
+unsigned int -> 0 to 2^32 -1
+long -> -2^63 +1 to 2^63 -1
+
+
+
+data_type arr [size]; (declaring static array)
+std::vector<data_type> array_name (declaring dynamic array)
+for example : std::vector<int> arr;
+std::vector<vector<int>> arr;
+std::vector<int> arr(size,value); -> Size can be variable or constant. Default value is 0 which is assigned to every element.
+
+arr.size()
+arr.push_back()
+arr.pop_back()
+arr.insert(position,freq,value)
+arr.find(element)
+arr.end()
+arr.begin()
+min(arr) 
+max(arr)
+reverse(begin(arr),end(arr))
+count(start_index,end_index,element)
+
+
+toupper()
+tolower()
+isupper()
+islower()
+isalpha()
+isdigit()
+max(num1,num2)
+min(num1,num2)
+sqrt(num1)
+gcd(num1,num2)
+swap(num1,num2)  -> works for arrays as well
+exchange(num1,num2)
+abs(num1)
+
+
+Strings are dynamic 1-D character arrays
+to_string()
+stoi()
+.substr(start_position,number_of_characters)
+string(1,character) -> to convert character to string
+
+stringstream s(text);  ->stores individual words that are seperated by spaces present in the string text
+s>>word -> access word
+s<<word -> add word
+
+2-D array is an array inside an array
+
+data_type array_name [rows][columns] (declaring 2-d static array)
+
+std::vector<vector<data_type>> arr (declaring 2-d dynamic array)
+Matrix is a 2d static array and is also an application of 2-d dynamic arrays with rows and columns. The size of the array inside the bigger array is constant.
+int row =arr.size();
+int col=arr[0].size();
+
+Stack follow LIFO
+stack<data_type> stack_name;
+s.push();
+s.pop();
+s.size();
+s.empty();
+s.top();
+
+Queue follow FIFO
+queue <data_type> queue_name;
+q.push();
+q.pop();  -> pops first element (FIFO)
+q.size();
+q.empty();
+q.back();
+q.front();
+
+
+
+Recursion is calling a function in the same function. The function will keep calling until a value is returned.  
+
+Binary search is used when the array is monotonic i.e when it is increasing/decreasing. Binary search is better than linear search as it reduces the number of iterations. One disadvantage of binary search is that it might not return the first index where found.
+Code(for increasing):
+int start=0;
+int end = arr.size()-1;
+while(start<=end){
+       int mid= start+(end-start)/2;
+       if(arr[mid]==key){
+         return mid;
+       }
+       else if(arr[mid]>key){
+         end=mid-1;
+       }
+       else{
+         start=mid+1;
+       }
+}
+return -1;
+
+Sort STL: sort(begin(arr),end(arr));
+Sorting is to arrange the values in increasing/decreasing order
+1. Selection sort
+Code (for arranging in increasing order):
+for(int i = 0; i < n-1; i++ ) {
+        int minIndex = i;
+        
+        for(int j = i+1; j<n; j++) {
+            
+            if(arr[j] < arr[minIndex]) 
+                minIndex = j;
+            
+        }
+        swap(arr[minIndex], arr[i]);
+    }
+As the rounds/iterations of i proceed, the elements are sorted from the left(smallest to largest)
+
+2. Bubble Sort
+Code(for arranging in increasing order):
+ for(int i = 0; i<n-1; i++) {
+           
+        for(int j =0; j<(n-1)-i; j++) {
+            
+            if(arr[j] > arr[j+1]) {
+                swap(arr[j], arr[j+1]);
+            }
+            
+        }
+        
+}
+As the rounds/iterations of i proceed, the elements are sorted from the right(largest to smallest)
+
+3. Insertion Sort
+Code(for arranging in increasing order):
+
+for(int i = 1; i<n; i++) {
+        int temp = arr[i];
+        int j = i-1;
+        for(; j>=0; j--) {
+            
+            if(arr[j] > temp) {
+                
+                arr[j+1] = arr[j];
+            }
+            else { 
+                break;
+            }
+            
+        }
+        
+        arr[j+1] = temp;  
+    } 
+
+
+
+
