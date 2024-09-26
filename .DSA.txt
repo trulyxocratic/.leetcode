@@ -28,6 +28,8 @@ reverse(begin(arr),end(arr))
 count(start_index,end_index,element)
 
 
+
+Math:
 toupper()
 tolower()
 isupper()
@@ -43,17 +45,20 @@ exchange(num1,num2)
 abs(num1)
 
 
+String:
 Strings are dynamic 1-D character arrays
 to_string()
 stoi()
 .substr(start_position,number_of_characters)
 string(1,character) -> to convert character to string
-.find(char_or_string)
+.find(char_or_string) -> returns first index where found
 
 stringstream s(text);  ->stores individual words that are seperated by spaces present in the string text
 s>>word -> access word
 s<<word -> add word
 
+
+Matrix:
 2-D array is an array inside an array
 
 data_type array_name [rows][columns] (declaring 2-d static array)
@@ -63,6 +68,8 @@ Matrix is a 2d static array and is also an application of 2-d dynamic arrays wit
 int row =arr.size();
 int col=arr[0].size();
 
+
+Stack:
 Stack follow LIFO
 stack<data_type> stack_name;
 s.push();
@@ -71,6 +78,8 @@ s.size();
 s.empty();
 s.top();
 
+
+Queue:
 Queue follow FIFO
 queue <data_type> queue_name;
 q.push();
@@ -79,7 +88,6 @@ q.size();
 q.empty();
 q.back();
 q.front();
-
 
 
 Recursion is calling a function in the same function. The function will keep calling until a value is returned.  
