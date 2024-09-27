@@ -24,7 +24,7 @@ arr.end()
 arr.begin()
 min({1,2,3}) -> No array variables allowed
 max({2,3,4}) -> No array variables allowed
-reverse(begin(arr),end(arr))
+reverse(arr.begin(),arr.end())
 count(arr.begin(),arr.end(),element)
 accumulate(arr.begin(),arr.end(),start_value_of_sum)
 
@@ -111,7 +111,7 @@ while(start<=end){
 }
 return -1;
 
-Sort STL: sort(begin(arr),end(arr));
+Sort STL: sort(arr.begin(),arr.end());
 Sorting is to arrange the values in increasing/decreasing order
 1. Selection sort
 Code (for arranging in increasing order):
