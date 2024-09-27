@@ -10,7 +10,7 @@ long -> -2^63 +1 to 2^63 -1
 
 
 Array:
-data_type arr [size]; (declaring static array)
+data_type arr [size]; (declaring static array) -> Size should not be a variable
 std::vector<data_type> array_name (declaring dynamic array)
 for example : std::vector<int> arr;
 std::vector<vector<int>> arr;
@@ -22,8 +22,8 @@ arr.pop_back()
 arr.insert(position,freq,value)
 arr.end()
 arr.begin()
-min(arr) 
-max(arr)
+min({1,2,3}) -> No array variables allowed
+max({2,3,4}) -> No array variables allowed
 reverse(begin(arr),end(arr))
 count(arr.begin(),arr.end(),element)
 accumulate(arr.begin(),arr.end(),start_value_of_sum)
