@@ -25,7 +25,7 @@ arr.begin()
 min(arr) 
 max(arr)
 reverse(begin(arr),end(arr))
-count(start_index,end_index,element)
+count(arr.begin(),arr.end(),element)
 
 
 
