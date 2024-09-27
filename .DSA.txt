@@ -26,6 +26,7 @@ min(arr)
 max(arr)
 reverse(begin(arr),end(arr))
 count(arr.begin(),arr.end(),element)
+accumulate(arr.begin(),arr.end(),start_value_of_sum)
 
 
 
