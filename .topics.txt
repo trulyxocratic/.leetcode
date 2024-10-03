@@ -13,3 +13,4 @@ Number Theory
 Counting
 Simulation
 String Matching
+Enumeration
