@@ -164,6 +164,21 @@ for(int i = 1; i<n; i++) {
         arr[j+1] = temp;  
     } 
 
+Time Complexity:
+For a given algorithm there are 3 types of input:
+Worst case -> This input/input size takes the highest number of steps to execute
+Best case -> This input/input size takes the least number of steps to execute
+Average case -> This is the total number of steps divided by total number of input/input size
+
+Big O Analysis is the relation between the time taken to execute code and the worst case input/input size
+Big Ω Analysis is the relation between the time taken to execute code and the best case input/input size
+Big θ Analysis is the relation between the time taken to execute code and average case input/input size
+
+Big O analysis is the most important because a code is efficient only if its able to handle its worst case scenarios
+
+Space Complexity:
+It is the relation between the extra space taken (also known as auxiliary space) and the input/input size
+
 
 
 
