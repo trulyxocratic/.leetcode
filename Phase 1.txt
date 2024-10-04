@@ -1,0 +1,3 @@
+This is the end of phase 1
+Problems solved -> Easy-225  Medium-0 Hard-0 
+A few more topics are left to cover which we will do later
