@@ -171,13 +171,16 @@ Best case -> This input/input size takes the least number of steps to execute
 Average case -> This is the total number of steps divided by total number of input/input size
 
 Big O Analysis is the relation between the time taken to execute code and the worst case input/input size
+It is known as the upper bound of the algorithm. Eg: A ferrari will not take more than 6 sec to complete 100 meters. The maximum time it will take is 6 s.
 Big Ω Analysis is the relation between the time taken to execute code and the best case input/input size
+It is known as the lower bound of the algorithm. Eg: A ferrari will not take less than 3 sec to complete 100 meters. The minimum time it will take is 3 s.
 Big θ Analysis is the relation between the time taken to execute code and average case input/input size
 
-Big O analysis is the most important because a code is efficient only if its able to handle its worst case scenarios
-
+We can know the better algorithm by looking at the big O analysis as an algorithm is better efficient if its better at handling its worst case scenarios
 Space Complexity:
 It is the relation between the extra space taken (also known as auxiliary space) and the input/input size
+
+O(1) > O(logN) > O(N) > O(NlogN) > O(N^2) > O(N^3) > O(2^N) > O(N!)
 
 
 
