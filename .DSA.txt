@@ -22,6 +22,7 @@ arr.pop_back()
 arr.insert(position,freq,value)
 arr.end()
 arr.begin()
+arr.clear()
 min({1,2,3}) -> No array variables allowed
 max({2,3,4}) -> No array variables allowed
 reverse(arr.begin(),arr.end())
