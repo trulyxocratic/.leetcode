@@ -99,7 +99,7 @@ Code(for increasing):
 int start=0;
 int end = arr.size()-1;
 while(start<=end){
-       int mid= start+(end-start)/2;
+       int mid= (start+end)/2;
        if(arr[mid]==key){
          return mid;
        }
@@ -111,6 +111,28 @@ while(start<=end){
        }
 }
 return -1;
+
+Recursive:
+int bin_r(int* a,int l,int h,int key){
+if(l==h){
+   if(a[l]==key){
+    return l;
+   }
+   else{
+    return -1;
+   }
+}
+int mid=(l+h)/2;
+if(a[mid]==key){
+    return mid;
+}
+else if(a[mid]>key){
+    return bin_r(a,l,mid-1,key);
+}
+else{
+    return bin_r(a,mid+1,h,key);
+}
+}
 
 Sort STL: sort(arr.begin(),arr.end());
 Sorting is to arrange the values in increasing/decreasing order
