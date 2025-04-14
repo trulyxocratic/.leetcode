@@ -43,7 +43,7 @@ min(num1,num2)
 sqrt(num1)
 gcd(num1,num2)
 swap(num1,num2)  -> works for arrays as well
-exchange(num1,num2)
+exchange(num,new_value) -> will return old value and replace with new value
 abs(num1)
 
 
