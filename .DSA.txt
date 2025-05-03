@@ -45,6 +45,8 @@ gcd(num1,num2)
 swap(num1,num2)  -> works for arrays as well
 exchange(num,new_value) -> will return old value and replace with new value
 abs(num1)
+floor(num)
+ceil(num)
 
 
 String:
