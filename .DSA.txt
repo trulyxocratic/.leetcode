@@ -68,6 +68,7 @@ Matrix:
 data_type array_name [rows][columns] (declaring 2-d static array)
 
 std::vector<vector<data_type>> arr (declaring 2-d dynamic array)
+vector<vector<int>> arr(5,<vector>int(4,0)) -> initializing a 5 row 4 col matrix with 0
 Matrix is a 2d static array and is also an application of 2-d dynamic arrays with rows and columns. The size of the array inside the bigger array is constant.
 int row =arr.size();
 int col=arr[0].size();
