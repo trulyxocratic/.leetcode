@@ -2,7 +2,6 @@ Array
 String
 Math
 Matrix
-Math
 Geometry
 Stack
 Queue
@@ -14,4 +13,3 @@ Counting
 Simulation
 String Matching
 Enumeration
-Time and Space Complexity
