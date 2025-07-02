@@ -8,6 +8,8 @@ int -> -2^31 to 2^31 -1
 unsigned int -> 0 to 2^32 -1
 long -> -2^63 +1 to 2^63 -1
 
+Operators:
+% -> need two int operands(any qualifier like long,unsigned)
 
 Array:
 data_type arr [size]; (declaring static array) -> Size should not be a variable
@@ -41,6 +43,7 @@ isdigit()
 max(num1,num2)
 min(num1,num2)
 sqrt(num1)
+pow(base,exp) -> returns double 
 gcd(num1,num2)
 swap(num1,num2)  -> works for arrays as well
 exchange(num,new_value) -> will return old value and replace with new value
@@ -48,6 +51,15 @@ abs(num1)
 floor(num)
 ceil(num)
 
+Techniques:
+1. Fast pow
+while (exp > 0) {
+        if (exp % 2 == 1) {        // if exponent is odd
+            result = (result * base) % mod;
+        }
+        base = (base * base) % mod;       // square the base
+        exp /= 2;                  // divide exponent by 2
+    }
 
 String:
 Strings are dynamic 1-D character arrays
