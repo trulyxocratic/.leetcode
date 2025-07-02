@@ -17,6 +17,7 @@ std::vector<data_type> array_name (declaring dynamic array)
 for example : std::vector<int> arr;
 std::vector<vector<int>> arr;
 std::vector<int> arr(size,value); -> Size can be variable or constant. Default value is 0 which is assigned to every element.
+std::vector<vector<int>> ans(m, vector<int>(n, 0));
 
 arr.size()
 arr.push_back()
