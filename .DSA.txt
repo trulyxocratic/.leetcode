@@ -70,6 +70,7 @@ islower()
 isalpha()
 isdigit()
 
+
 Techniques:
 1. Fast pow
 while (exp > 0) {
@@ -81,7 +82,7 @@ while (exp > 0) {
     }
 
 String:
-#include <string> (sometimes #include <iostream> automatically imports string container in few compilers)
+#include <string> 
 Strings are dynamic 1-D character containers
 to_string()
 stoi()
@@ -151,14 +152,9 @@ return -1;
 
 Recursive:
 int bin_r(int* a,int l,int h,int key){
-if(l==h){
-   if(a[l]==key){
-    return l;
+if(l>h){
+        return -1;
    }
-   else{
-    return -1;
-   }
-}
 int mid=(l+h)/2;
 if(a[mid]==key){
     return mid;
@@ -224,7 +220,39 @@ for(int i = 1; i<n; i++) {
         arr[j+1] = temp;  
     } 
 
+OOPS:
+Objects - attributes and methods
+class - blueprint
+class demo {
+ private:
+  int salary 
+ public : 
+  string name;
+  int id;
+  void set_name(string s) { name = s; }
+  void set_sal(int sal) { salary = sal; } //setter - to set values of private attributes
+  void get_sal() { return salary; } //getter - to get values of private attributes
+};
+private,public - Access modifiers
+encapsulation - binding attributes and methods, used for data hiding
+constructor - to create space(automatic) or initialize the values of attributes(programmer defined)
+class demo {
+ private:
+  int salary 
+ public : 
+  string name;
+  int id;
+  demo(){
+    cout<<"Hi its the constructor";
+    name="josh";
+  }
+  demo(string name){ //parameterized and constructor overloading
+   this->name=name;  // this is pointer to object 
+}
+};
 
+Linked List: Linear non continuous data structure
+Accessing a element - O(n) unlike O(1) for array
 
 
 
